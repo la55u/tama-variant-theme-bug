@@ -1,4 +1,4 @@
-import { createTamagui } from 'tamagui'
+import { createTamagui, createTheme } from 'tamagui'
 import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
 import { themes, tokens } from '@tamagui/themes'
@@ -50,6 +50,16 @@ const bodyFont = createInterFont(
   }
 )
 
+const primary = createTheme({
+  mycolor: 'blue',
+  mybg: 'red',
+})
+
+const light_primary_Button = createTheme({
+  mycolor: 'white',
+  mybg: 'tomato',
+})
+
 export const config = createTamagui({
   animations,
   shouldAddPrefersColorThemes: true,
@@ -59,7 +69,11 @@ export const config = createTamagui({
     heading: headingFont,
     body: bodyFont,
   },
-  themes,
+  themes: {
+    ...themes,
+    primary,
+    light_primary_Button,
+  },
   tokens,
   media: createMedia({
     xs: { maxWidth: 660 },
