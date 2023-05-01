@@ -50,13 +50,12 @@ const bodyFont = createInterFont(
   }
 )
 
-const primary = createTheme({
+const light_primary = createTheme({
   mycolor: 'blue',
   mybg: 'red',
 })
 
-// rename this to `light_primary_Button` to see that the button doesn't pick up the right background nor the color
-const primary_Button = createTheme({
+const light_primary_Button = createTheme({
   mycolor: 'white',
   mybg: 'tomato',
 })
@@ -72,8 +71,8 @@ export const config = createTamagui({
   },
   themes: {
     ...themes,
-    primary,
-    primary_Button,
+    light_primary,
+    light_primary_Button,
   },
   tokens,
   media: createMedia({
