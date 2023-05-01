@@ -55,7 +55,8 @@ const primary = createTheme({
   mybg: 'red',
 })
 
-const light_primary_Button = createTheme({
+// rename this to `light_primary_Button` to see that the button doesn't pick up the right background nor the color
+const primary_Button = createTheme({
   mycolor: 'white',
   mybg: 'tomato',
 })
@@ -72,7 +73,7 @@ export const config = createTamagui({
   themes: {
     ...themes,
     primary,
-    light_primary_Button,
+    primary_Button,
   },
   tokens,
   media: createMedia({
