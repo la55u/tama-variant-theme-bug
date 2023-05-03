@@ -51,11 +51,6 @@ const bodyFont = createInterFont(
 )
 
 const light_primary = createTheme({
-  mycolor: 'blue',
-  mybg: 'red',
-})
-
-const light_primary_Button = createTheme({
   mycolor: 'white',
   mybg: 'tomato',
 })
@@ -72,7 +67,6 @@ export const config = createTamagui({
   themes: {
     ...themes,
     light_primary,
-    light_primary_Button,
   },
   tokens,
   media: createMedia({
