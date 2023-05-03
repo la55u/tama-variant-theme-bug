@@ -1,4 +1,4 @@
-import { Button, Paragraph, Theme, YStack, styled } from '@my/ui'
+import { Button, Theme, YStack, styled } from '@my/ui'
 
 const MyButton = styled(Button, {
   name: 'Button',
